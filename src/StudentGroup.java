@@ -95,23 +95,23 @@ public class StudentGroup implements StudentArrayOperation {
 	public void remove(int index)  throws IllegalArgumentException{
 		if(index<0 || index>=students.length) throw new IllegalArgumentException("");
 		// Add your implementation here
-		for(int i=index;i<students.length-1;i++){
+		/*for(int i=index;i<students.length-1;i++){
 			students[i]=students[i+1];
 		}
-		students=createNewArray(students,-1);
+		students=createNewArray(students,-1);*/
 	}
 
 	@Override
 	public void remove(Student student)  throws IllegalArgumentException{
 		if(student==null) throw new IllegalArgumentException("");
-		int flag=0;
+		/*int flag=0;
 		for(int i=0;i<students.length;i++){
 			if(students[i].equals(student)){
 				this.remove(i);
 				flag=1;
 			} 
 		}
-		if(flag==0)   throw new IllegalArgumentException("Student not exist");
+		if(flag==0)   throw new IllegalArgumentException("Student not exist");*/
 		
 	}
 
@@ -119,18 +119,18 @@ public class StudentGroup implements StudentArrayOperation {
 	public void removeFromIndex(int index)  throws IllegalArgumentException{
 		// Add your implementation here
 		if(index<0 || index>=students.length) throw new IllegalArgumentException("");
-		int a=students.length-index-1;
-		students=createNewArray(students,-1*a);
+		/*int a=students.length-index-1;
+		students=createNewArray(students,-1*a);*/
 		
 	}
 
 	@Override
 	public void removeFromElement(Student student)  throws IllegalArgumentException{
 		// Add your implementation here
-		if(student==null) throw new IllegalArgumentException("");
+		/*if(student==null) throw new IllegalArgumentException("");
 		for(int i=0;i<students.length;i++){
 			if(students[i].equals(student)) this.removeFromIndex(i);
-		}
+		}*/
 		
 	}
 
@@ -138,21 +138,21 @@ public class StudentGroup implements StudentArrayOperation {
 	public void removeToIndex(int index)  throws IllegalArgumentException{
 		// Add your implementation here
 		if(index<0 || index>=students.length) throw new IllegalArgumentException("");
-		int a=index-0;
+		/*int a=index-0;
 		int p=0;
 		for(int i=index;i<students.length;i++){
 			students[p++]=students[i];
 		}
-		students=createNewArray(students,-1*a);
+		students=createNewArray(students,-1*a);*/
 	}
 
 	@Override
 	public void removeToElement(Student student)  throws IllegalArgumentException{
 		// Add your implementation here
 		if(student==null) throw new IllegalArgumentException("");
-		for(int i=0;i<students.length;i++){
+		/*for(int i=0;i<students.length;i++){
 			if(students[i].equals(student)) this.removeToIndex(i);
-		}
+		}*/
 	}
 
 	@Override
